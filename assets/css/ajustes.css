@@ -1,0 +1,17 @@
+.logo-navbar{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url(../img/ilustrativa1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
