@@ -1,6 +1,9 @@
 # Trabalho-FullStack-Faculdade
 Acesse o site: *https://ernanef.github.io/Trabalho-FullStack-Faculdade/* 
-
+**Membros do grupo**: 
+- Ernane Manoel da Silva Filho
+- Brunno Zara Bolognisi
+- Jhonnatan
 
 # Estrutura e Requisitos
 
