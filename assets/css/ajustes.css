@@ -15,3 +15,68 @@
     height: 100vh;
 }
 
+
+/* CheckBox para cards */
+.ver-mais-checkbox {
+    display: none;
+}
+
+.ver-mais-checkbox + label {
+    cursor: pointer;
+    display: inline-block;
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.ver-mais-checkbox + label:hover {
+    color: #0056b3;
+}
+
+.ver-mais-checkbox + label:before {
+    content: "Ver mais";
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.ver-mais-checkbox:checked + label:before {
+    content: "Ocultar";
+}
+
+.lista-servicos li:nth-child(n+3) {
+    display: none;
+}
+
+.ver-mais-checkbox:checked ~ .lista-servicos li:nth-child(n+3) {
+    display: list-item;
+}
+
+/* Mudar a posição dos controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 10;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); 
+}
+
+.carousel-control-prev {
+    left: -60px; 
+}
+
+.carousel-control-next {
+    right: -60px; 
+}

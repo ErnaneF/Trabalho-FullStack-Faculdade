@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esteticista Facial e Corporal</title>
+    <title>Fernanda Esteticista</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/ajustes.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
     <style>
         body {
             padding-top: 56px;
@@ -36,6 +40,9 @@
                         <a class="nav-link smooth-scroll" href="#services">Serviços</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link smooth-scroll" href="#results">Resultados</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link smooth-scroll" href="#contact">Contato</a>
                     </li>
                 </ul>
@@ -44,12 +51,16 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    
         <!-- Banner Section -->
-        <section id="banner"> </section>
-
+        <div id="home">
+            <section id="banner"> </section>
+        </div>
+        
+    <main class="container-fluid"></main>
         <!-- About Section -->
         <section id="about" class="container mt-5">
+            <h1 class="mb-5" style="text-align: center;">Fernanda Farias Esteticista</h1>
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Sobre Nós</h2>
@@ -57,57 +68,172 @@
                 </div>
                 <div class="col-lg-6">
 
-                    <section id="carosel">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./assets/img/beneficios3.jfif" alt="Primeiro Slide">
-                
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./assets/img/beneficios3.jfif" alt="Segundo Slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./assets/img/beneficios3.jfif" alt="Terceiro Slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Anterior</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Próximo</span>
-                            </a>
-                        </div>
-                    </section>
+
                 </div>
             
             </div>
         </section>
                 
-
+        
 
         <!-- Services Section -->
         <section id="services" class="container mt-5">
+            <hr class="mt-5">
+            <h1 class="mb-5" style="text-align: center;">Serviços</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./assets/img/ilustrativa1.jpg" class="card-img-top" alt="Facial">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Facial</h5>
+                                        <input type="checkbox" id="ver-mais-facial" class="ver-mais-checkbox">
+                                        <label for="ver-mais-facial"></label>
+                                        <ul class="lista-servicos">
+                                            <li>Limpeza de Pele</li>
+                                            <li>Hidratação Profunda</li>
+                                            <li>Peeling Químico</li>
+                                            <li>Peeling de Diamante</li>
+                                            <li>Rejuvenescimento</li>
+                                            <li>Microagulhamento</li>
+                                            <li>Tratamento Acne</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./assets/img/download.png" class="card-img-top" alt="Corporal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Corporal</h5>
+                                        <input type="checkbox" id="ver-mais-corporal" class="ver-mais-checkbox">
+                                        <label for="ver-mais-corporal"></label>
+                                        <ul class="lista-servicos ">
+                                            <li >Pump-up</li>
+                                            <li >Massagem Detox</li>
+                                            <li >Massagem Modeladora</li>
+                                            <li >Massagem Relaxante</li>
+                                            <li >Drenagem Linfática</li>
+                                            <li >Endermoterapia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./assets/img/ilustrativa1.jpg" class="card-img-top" alt="Massagem">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hydra Gloss Lips</h5>
+                                        <input type="checkbox" id="ver-mais-hydra" class="ver-mais-checkbox">
+                                        <label for="ver-mais-hydra"></label>
+                                        <ul class="lista-servicos">
+                                            <li>Super-hidratação</li>
+                                            <li>Propicia o Rejuvenescimento</li>
+                                            <li>Um UP na definição e no volume dos lábios</li>
+                                            <li>É um tratamento que devem ser feitas de 3 a 5 sessões</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./assets/img/20220418-01-Labios_aclimacao.png" class="card-img-top" alt="Massagem">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hydra Gloss Lips</h5>
+                                        <input type="checkbox" id="ver-mais-hydra" class="ver-mais-checkbox">
+                                        <label for="ver-mais-hydra"></label>
+                                        <ul class="lista-servicos">
+                                            <li>Super-hidratação</li>
+                                            <li>Propicia o Rejuvenescimento</li>
+                                            <li>Um UP na definição e no volume dos lábios</li>
+                                            <li>É um tratamento que devem ser feitas de 3 a 5 sessões</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="./assets/img/20220418-01-Labios_aclimacao.png" class="card-img-top" alt="Massagem">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hydra Gloss Lips</h5>
+                                        <input type="checkbox" id="ver-mais-hydra" class="ver-mais-checkbox">
+                                        <label for="ver-mais-hydra"></label>
+                                        <ul class="lista-servicos">
+                                            <li>Super-hidratação</li>
+                                            <li>Propicia o Rejuvenescimento</li>
+                                            <li>Um UP na definição e no volume dos lábios</li>
+                                            <li>É um tratamento que devem ser feitas de 3 a 5 sessões</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            
+        </section>
+
+        
+
+
+        <!-- Results Section -->
+        <section id="results" class="container mt-5">
+            <hr class="mt-5">
+            <h1 class="mb-5" style="text-align: center;">Resultados</h1>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <!-- <div class="card">
                         <img src="./assets/img/download (1).jfif" class="card-img-top" alt="Facial">
                         <div class="card-body">
                             <h5 class="card-title">Facial</h5>
-                            <p class="card-text"> Limpeza de Pele<br> Hidratação Profunda <br> Peeling Químico <br> Peeling de Diamante <br> Rejuvenescimento <br> Microagulhamento <br> Tratamaneto Acne <br> </p>
+                            <input type="checkbox" id="ver-mais-facial" class="ver-mais-checkbox">
+                            <label for="ver-mais-facial"></label>
+                            <ul class="lista-facial">
+                                <li>Limpeza de Pele</li>
+                                <li>Hidratação Profunda</li>
+                                <li>Peeling Químico</li>
+                                <li>Peeling de Diamante</li>
+                                <li>Rejuvenescimento</li>
+                                <li>Microagulhamento</li>
+                                <li>Tratamento Acne</li>
+                            </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <!-- <div class="card">
                         <img src="./assets/img/download.jfif" class="card-img-top" alt="Corporal">
                         <div class="card-body">
                             <h5 class="card-title">Corporal</h5>
-                            <p class="card-text"> Pump-up <br> Massagem Detox <br> Massagem Modeladora <br> Massagem Relaxante <br> Drenagem Linfática <br> Endermoterapia <br></p>
+                            <input type="checkbox" id="ver-mais-corporal" class="ver-mais-checkbox">
+                            <label for="ver-mais-corporal"></label>
+                            <ul class="lista-corporal">
+                                <li>Pump-up</li>
+                                <li>Massagem Detox</li>
+                                <li>Massagem Modeladora</li>
+                                <li>Massagem Relaxante</li>
+                                <li>Drenagem Linfática</li>
+                                <li>Endermoterapia</li>
+                            </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-4">
                     <div class="card">
@@ -119,33 +245,48 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
+        
+
         <!-- Contact Section -->
-        <section id="contact" class="container mt-5">
-            <h2>Marque sua sessão!</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+        <section id="contact" class="container mt-5 mb-5">
+            <hr class="mt-5">
+            <h1 class="mb-5" style="text-align: center;">Contato</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                    <h5 class="" style="text-align: center;"> <i class="fa fa-map w3-xxlarge w3-text-light-grey"></i> Localização </h5>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.455340983964!2d-48.9397032!3d-20.0228082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf2e55702d87d7%3A0x7f5b3f911e7b7c5a!2sR.%20Treze%20de%20Maio%2C%20510%20-%20Carmo%2C%20Frutal%20-%20MG%2C%2038200-000!5e0!3m2!1spt-BR!2sbr!4v1674443792584!5m2!1spt-BR!2sbr" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="" style="text-align: center;"> <i class="fa fa-pen w3-xxlarge w3-text-light-grey"></i> Marque sua sessão! </h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Telefone</label>
+                                <input type="number" class="form-control" id="number" placeholder="Seu telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Escolha seu atendimento: </label>
+                                <select type="select" class="form-control" id="exampleFormControlSelect1">
+                                    <option value="1">Facial</option>
+                                    <option value="2">Corporal</option>
+                                    <option value="3">Banho de Lua</option>
+                                    <option value="4">Hydra Gloss Lips</option>
+                                
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Telefone</label>
-                    <input type="number" class="form-control" id="number" placeholder="Seu telefone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Escolha seu atendimento: </label>
-                    <select type="select" class="form-control" id="exampleFormControlSelect1">
-                        <option value="1">Facial</option>
-                        <option value="2">Corporal</option>
-                        <option value="3">Banho de Lua</option>
-                        <option value="4">Hydra Gloss Lips</option>
-                    
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
+            
         </section>
     
 
@@ -156,15 +297,18 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Fernanda Farias Esteticista</h5>
-                    <p>Proporcionando bem-estar e autoestima através de tratamentos estéticos.</p>
+                    <h5 class="">Endereço</h5>
+                    <p>R. Treze de Maio, 510 - Carmo, Frutal - MG, 38200-000.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase"> <i class="fa fa-map w3-xxlarge w3-text-light-grey"></i> Localização </h5>
-                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.455340983964!2d-48.9397032!3d-20.0228082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf2e55702d87d7%3A0x7f5b3f911e7b7c5a!2sR.%20Treze%20de%20Maio%2C%20510%20-%20Carmo%2C%20Frutal%20-%20MG%2C%2038200-000!5e0!3m2!1spt-BR!2sbr!4v1674443792584!5m2!1spt-BR!2sbr" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <h5 class=""> Telefone  </h5>
+                    <a href="https://api.whatsapp.com/send/?phone=5534998985926" target="_blank"
+                    class="text-dark"><i class="fa fa-whatsapp w3-xxlarge w3-text-light-grey"></i> Whatsapp
+                </a>
+    
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Contato</h5>
+                    <h5 class="text-uppercase">Redes Sociais</h5>
                     <ul class="list-unstyled mb-0">
                         <li>
                             <a href="https://www.instagram.com/esteticista.fernandaf/?hl=pt-br" target="_blank"
@@ -172,9 +316,7 @@
                                 Instagram</a>
                         </li>
                         <li>
-                            <a href="https://api.whatsapp.com/send/?phone=5534998985926" target="_blank"
-                                class="text-dark"><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i> Whatsapp
-                            </a>
+
                         </li>
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100090972937945&mibextid=ZbWKwL"
@@ -200,17 +342,13 @@
             console.log("Page is ready!");
         });
 
-        $('.card').click(function () {
-            alert('Card clicked!');
-        });
-
         $(document).ready(function() {
             $('.smooth-scroll').on('click', function(event) {
                 event.preventDefault();
                 var target = $(this).attr('href');
                 $('html, body').animate({
                 scrollTop: $(target).offset().top
-                }, 1000);
+                }, 800);
             });
         });
 
