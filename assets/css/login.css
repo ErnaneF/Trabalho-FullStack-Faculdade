@@ -18,7 +18,7 @@ body::before {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url(../img/download.jfif);
+    background: color(brown);
     background-position: center;
     background-size: cover;
 }
