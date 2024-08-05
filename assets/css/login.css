@@ -18,7 +18,7 @@ body::before {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: brown;
+    background:#F8E0E6;
     background-position: center;
     background-size: cover;
     z-index: -1; 
@@ -32,7 +32,7 @@ body::before {
     text-align: center;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #D87093;
 }
 
 form {

@@ -54,29 +54,9 @@
     display: list-item;
 }
 
-/* Mudar a posição dos controles do carrossel */
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    z-index: 10;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%); 
-}
+/* Ajuste de imagem ADMIN */
 
-.carousel-control-prev {
-    left: -60px; 
-}
-
-.carousel-control-next {
-    right: -60px; 
+.fixed-size-img {
+    width: 200px; 
+    height: auto;
 }

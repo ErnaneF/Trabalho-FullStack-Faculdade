@@ -4,158 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esteticista Facial e Corporal</title>
+    <title>Administrador</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/ajustes.css">
-    <link rel="shortcut icon" href="assets/Imagem redimensionada site TUDO PNG/favicon.ico" type="image/x-icon">
-    <style>
-        .badge-success {
-            background-color: #28a745;
-        }
-        .badge-danger {
-            background-color: #dc3545;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+
 </head>
+
 <body>
-    
+
     <div class="container mt-3">
-        <h2>Administradores</h2>
-        <div class="d-flex justify-content-between mb-3">
-            <button class="btn btn-primary">+ ADICIONAR</button>
-            <button class="btn btn-secondary">Exportar</button>
-        </div>
-    
-        <input type="search" class="form-control mb-3" placeholder="+ ADICIONAR FILTRO">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Usuário</th>
-                    <th>Ativo</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Ernane Filho</td>
-                    <td>user_dev</td>
-                    <td><span class="badge badge-success">Sim</span></td>
-                    <td><button class="btn btn-success">PERMISSÃO</button></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Bruno Zara</td>
-                    <td>user_dev</td>
-                    <td><span class="badge badge-success">Sim</span></td>
-                    <td><button class="btn btn-success">PERMISSÃO</button></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Jhonnatha Fagundes</td>
-                    <td>user_dev</td>
-                    <td><span class="badge badge-success">Sim</span></td>
-                    <td><button class="btn btn-success">PERMISSÃO</button></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Fernanda Farias</td>
-                    <td>client_user</td>
-                    <td><span class="badge badge-success">Sim</span></td>
-                    <td><button class="btn btn-warning">PERMISSÃO</button></td>
-                </tr>
-                <tr>
-                    <td>5</td>s
-                    <td>Luis Felipe</td>
-                    <td>client_user</td>
-                    <td><span class="badge badge-danger">Não</span></td>
-                    <td><button class="btn btn-danger">Negado</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <footer class="bg-light text-center text-lg-start">
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Suporte técnico</h5>
-                    <p><li><a href="https://api.whatsapp.com/send/?phone=5534999972155" target="_blank"
-                            class="text-dark"><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i> Ernane Filho - Whatsapp</a></li></p>
-                    <p><li><a href="https://api.whatsapp.com/send/?phone=5517992365469" target="_blank"
-                            class="text-dark"><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i> Bruno Zara - Whatsapp</a></li></p>
-                    <p><li><a href="https://api.whatsapp.com/send/?phone=5534984261666" target="_blank"
-                            class="text-dark"><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i> Jhonnatha Fagundes - Whatsapp</a></li></p>
+        <ul class="nav nav-tabs" id="adminTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="results-tab" data-bs-toggle="tab" href="#results" role="tab" aria-controls="results" aria-selected="true">Resultados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="services-tab" data-bs-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Serviços</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="adminTabsContent">
+            <!-- Results Tab -->
+            <div class="tab-pane fade show active" id="results" role="tabpanel" aria-labelledby="results-tab">
+                <h2>Resultados</h2>
+                <div class="d-flex justify-content-between mb-3">
+                    <button class="btn btn-primary mr-3">+ Adicionar</button>
+                    <button class="btn btn-danger me-3">- Remover</button>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-dark">Home</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark">Serviços</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark">Contato</a>
-                        </li>
-                    </ul>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            <input type="search" class="form-control" placeholder="ADICIONAR FILTRO">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Contato</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="https://www.instagram.com/esteticista.fernandaf/?hl=pt-br" target="_blank"
-                                class="text-dark"><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i>
-                                Instagram</a>
-                        </li>
-                        <li>
-                            <a href="https://api.whatsapp.com/send/?phone=5534998985926" target="_blank"
-                                class="text-dark"><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i> Whatsapp
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100090972937945&mibextid=ZbWKwL"
-                                target="_blank" class="text-dark"> <i
-                                    class="fa fa-facebook w3-xxlarge w3-text-light-grey"></i> Facebook</a>
-                        </li>
-                    </ul>
+                <table class="table table-striped" id="results-table">
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./assets/img/01.png" class="img-fluid fixed-size-img" alt="imagem"></td>
+                            <td>Corporal</td>
+                            <td>Pele mais saudável e radiante;
+                                Melhora da textura e tonalidade da pele;
+                                Redução de linhas finas e rugas;
+                                Aumento da firmeza e elasticidade da pele;
+                                Redução de manchas e cicatrizes;
+                                Corpo mais definido e tonificado;
+                                Redução de celulite e gordura localizada
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/img/04.png" class="img-fluid fixed-size-img" alt=""></td>
+                            <td>Facial</td>
+                            <td>Pele mais saudável e radiante;
+                                Melhora da textura e tonalidade da pele;
+                                Redução de linhas finas e rugas;
+                                Aumento da firmeza e elasticidade da pele;
+                                Redução de manchas e cicatrizes;
+                                Corpo mais definido e tonificado;
+                                Redução de celulite e gordura localizada
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/img/resultados3.png" class="img-fluid fixed-size-img" alt=""></td>
+                            <td>Facial</td>
+                            <td>Pele mais saudável e radiante;
+                                Melhora da textura e tonalidade da pele;
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!-- Services Tab -->
+            <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                <h2>Serviços</h2>
+                <div class="d-flex justify-content-between mb-3">
+                    <button class="btn btn-primary mr-3">+ Adicionar</button>
+                    <button class="btn btn-danger me-3">- Remover</button>
                 </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            <input type="search" class="form-control" placeholder="ADICIONAR FILTRO">
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped" id="services-table">
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Tipo</th>
+                            <th>Tratamentos</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./assets/img/ilustrativa1.jpg" class="img-fluid fixed-size-img" alt=""></td>
+                            <td>Facial</td>
+                            <td>Limpeza de pele;
+                                Hidratação profunda;
+                                Peeling Químico;
+                                Peeling de Diamante;
+                                Rejuvenescimento;
+                                Microagulhamento;
+                                Tratamento Acne;
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/img/download.png" class="img-fluid fixed-size-img" alt=""></td>
+                            <td>Corporal</td>
+                            <td>Pump-up;
+                                Massagem Detox;
+                                Massagem Modeladora;
+                                Massagem Relaxante;
+                                Drenagem Linfática;
+                                Endermoterapia
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="./assets/img/banho_de_lua.png" class="img-fluid fixed-size-img" alt=""></td>
+                            <td>Banho de Lua</td>
+                            <td>Clareamento dos pelos;
+                                Remove células mortas;
+                                Pele mais macia e nutrida;
+                                Procedimento rápido
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="text-center p-3 bg-light">
-            © 2024 Estética:
-            <a class="text-dark" href="#">esteticista.fernandaf</a>
-        </div>
-    </footer>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Icons Font Awesome -->
     <script src="https://kit.fontawesome.com/5086c6dc28.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            console.log("Page is ready!");
-        });
-
-        $('#carouselExampleIndicators').hover(
-            function () {
-                $(this).carousel('pause');
-            },
-            function () {
-                $(this).carousel('cycle');
-            }
-        );
-
-        $('.card').click(function () {
-            alert('Card clicked!');
-        });
-    </script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
