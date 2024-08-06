@@ -60,3 +60,8 @@
     width: 200px; 
     height: auto;
 }
+
+/* Ajuste de cor banner */
+.shadow-text {
+    text-shadow: 2px 2px 4px #c76d6d; /* Sombra rosa */
+}

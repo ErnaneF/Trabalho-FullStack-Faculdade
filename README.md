@@ -10,8 +10,6 @@ Acesse o site: *https://ernanef.github.io/Trabalho-FullStack-Faculdade/*
 
 ## Pagina principal
 
-### Introdução
-O site "Fernanda Esteticista" foi desenvolvido para promover os serviços de uma renomada esteticista facial e corporal. O objetivo é fornecer uma plataforma informativa e interativa onde os clientes possam conhecer os serviços oferecidos, visualizar resultados anteriores e agendar sessões facilmente.
 
 ### Requisitos
 
@@ -105,6 +103,20 @@ O site "Fernanda Esteticista" foi desenvolvido para promover os serviços de uma
     });
     ```
 
+
+3. **JQuery para mostrar opção "outros"**
+    ```javascript
+        $(document).ready(function() {
+        $('#exampleFormControlSelect1').change(function() {
+            if ($(this).val() == '4') {
+                $('#otherService').show();
+            } else {
+                $('#otherService').hide();
+            }
+            });
+        });
+    ```
+
 ### Favicons
 
 - Favicons em vários formatos (ico, png) para diferentes dispositivos.
@@ -112,8 +124,6 @@ O site "Fernanda Esteticista" foi desenvolvido para promover os serviços de uma
 
 ## Pagina de Login
 
-## Introdução
-Esta página de login foi criada para autenticação de usuários no site "Fernanda Esteticista". Ela contém campos para inserção de email e senha, opções de lembrar a senha e um link para recuperação de senha esquecida.
 
 ## Estrutura do Código
 
@@ -147,9 +157,6 @@ Esta página de login foi criada para autenticação de usuários no site "Ferna
 
 ## Pagina de Administrador
 
-## Introdução
-Esta página administrativa foi criada para gerenciar os administradores do site "Fernanda Esteticista". Inclui funcionalidades para adicionar novos administradores, exportar dados, filtrar administradores e visualizar suas permissões.
-
 ## Estrutura do Código
 
 ### HTML
@@ -166,3 +173,13 @@ Esta página administrativa foi criada para gerenciar os administradores do site
     - **Campo de Pesquisa**: Input para adicionar filtros.
     - **Tabela de Administradores**: Tabela listando os administradores com colunas de ID, Nome, Usuário, Status e Ações.
     - **Rodapé**: Informações de suporte técnico e links úteis.
+
+### Funcionamento
+
+* **Abas:** A página possui duas abas principais: Resultados e Serviços.
+* **Seções:** Cada aba contém uma tabela para listar os itens, um campo de busca e botões para adicionar, editar e remover itens.
+* **Visualização:** Os dados são apresentados em tabelas, facilitando a consulta.
+* **Busca:** Permite filtrar os resultados por um critério específico (implementação futura).
+* **Edição:** Ao clicar no botão "Editar", o usuário pode modificar as informações de um item específico.
+* **Remoção:** Ao clicar em "Remover", o item é excluído do sistema.
+* **Adição:** Ao clicar em "Adicionar", o usuário é direcionado a um formulário para inserir as informações de um novo item.
