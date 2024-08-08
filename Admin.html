@@ -24,6 +24,9 @@
             <li class="nav-item">
                 <a class="nav-link" id="services-tab" data-bs-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Serviços</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="users-tab" data-bs-toggle="tab" href="#users" role="tab" aria-controls="services" aria-selected="false">Usuários</a>
+            </li>
         </ul>
         <div class="tab-content" id="adminTabsContent">
             <!-- Results Tab -->
@@ -45,6 +48,7 @@
                 <table class="table table-striped" id="results-table">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Imagem</th>
                             <th>Tipo</th>
                             <th>Descrição</th>
@@ -53,6 +57,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td><img src="./assets/img/01.png" class="img-fluid fixed-size-img" alt="imagem"></td>
                             <td>Corporal</td>
                             <td>Pele mais saudável e radiante;
@@ -71,6 +76,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>2</td>
                             <td><img src="./assets/img/04.png" class="img-fluid fixed-size-img" alt=""></td>
                             <td>Facial</td>
                             <td>Pele mais saudável e radiante;
@@ -89,6 +95,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>3</td>
                             <td><img src="./assets/img/resultados3.png" class="img-fluid fixed-size-img" alt=""></td>
                             <td>Facial</td>
                             <td>Pele mais saudável e radiante;
@@ -124,6 +131,7 @@
                 <table class="table table-striped" id="services-table">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Imagem</th>
                             <th>Tipo</th>
                             <th>Tratamentos</th>
@@ -132,6 +140,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td><img src="./assets/img/ilustrativa1.jpg" class="img-fluid fixed-size-img" alt=""></td>
                             <td>Facial</td>
                             <td>Limpeza de pele;
@@ -150,6 +159,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>2</td>
                             <td><img src="./assets/img/download.png" class="img-fluid fixed-size-img" alt=""></td>
                             <td>Corporal</td>
                             <td>Pump-up;
@@ -168,6 +178,7 @@
                         </tr>
 
                         <tr>
+                            <td>3</td>
                             <td><img src="./assets/img/banho_de_lua.png" class="img-fluid fixed-size-img" alt=""></td>
                             <td>Banho de Lua</td>
                             <td>Clareamento dos pelos;
@@ -187,6 +198,96 @@
                     </tbody>
                 </table>
             </div>
+            <!-- Usuarios Tab -->
+            <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+                <h2>Usuarios</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            <input type="search" class="form-control" placeholder="ADICIONAR FILTRO">
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped" id="users-tab">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Login</th>
+                            <th>Perfil</th>
+                            <th>Status</th>
+                            <th>Agendamentos</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            
+                            <td>Fernanda Esteticista</td>
+                            <td><span class="badge badge-success">Admin</span></td>
+                            <td><span class="badge badge-success">Ativo</span></td>
+                            <td>Null</td>
+                            <td>
+                                <div class="d-flex justify-content-space-evenly">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            
+                            <td>Ernane</td>
+                            <td><span class="badge badge-success">Admin</span></td>
+                            <td><span class="badge badge-success">Ativo</span></td>
+                            <td>Null</td>
+                            <td>
+                                <div class="d-flex justify-content-space-evenly">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            
+                            <td>Brunno</td>
+                            <td><span class="badge badge-success">Admin</span></td>
+                            <td><span class="badge badge-danger">Ativo</span></td>
+                            <td>Tratamento Facial</td>
+                            <td>
+                                <div class="d-flex justify-content-space-evenly">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            
+                            <td>Jhonnatha</td>
+                            <td><span class="badge badge-danger">Cliente</span></td>
+                            <td><span class="badge badge-success">Ativo</span></td>
+                            <td>Tratamento Corporal</td>
+                            <td>
+                                <div class="d-flex justify-content-space-evenly">
+                                    <button class="btn btn-outline-warning mr-3" type="button">Editar</button>
+                                    <button class="btn btn-outline-danger" type="button">Remover</button>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
         </div>
     </div>
 
